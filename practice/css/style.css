@@ -22,6 +22,14 @@ html {
   font-size: 10px;
 }
 /* Basic setting */
+button,
+input,
+a {
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+}
 section {
   padding: 10rem 0;
 }
@@ -33,6 +41,12 @@ section {
   border-radius: 8px;
   text-transform: uppercase;
   border: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #e2a002;
 }
 /* main */
 .main {
@@ -51,14 +65,19 @@ section {
   font-size: 2rem;
   color: #292929;
 }
-.main .header .header-btn {
+.main .header-btn-wrap {
   text-align: right;
+  width: 100%;
+}
+.main .header-btn-wrap .header-btn {
+  text-align: center;
 }
 .main-content {
   margin-top: 10rem;
 }
 .main-content h1 {
   font-family: 'ProximaNova-bold', sans-serif;
+  margin-top: 0;
   font-size: 4rem;
   text-transform: uppercase;
   margin-bottom: 4rem;
@@ -134,4 +153,52 @@ section {
 .main-ps-form-text p {
   margin: 4rem 3rem 0;
   font-size: 1.2rem;
+}
+@media (max-width: 991px) {
+  .main {
+    background-position: top left;
+  }
+  .main-content {
+    margin-top: 3rem;
+  }
+  .main-title {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .phone-link {
+    position: relative;
+    top: 2rem;
+  }
+  .header-btn {
+    position: relative;
+    top: -7rem;
+  }
+  .main-content {
+    margin-top: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    text-align: center;
+  }
+  .header-btn-wrap {
+    text-align: center ! important;
+  }
+  .header-btn {
+    margin-top: 2rem;
+    position: static;
+  }
+  .phone-link {
+    margin-top: 2rem;
+    position: static;
+    font-size: 3rem ! important;
+  }
+  .main-content {
+    margin-top: 14rem;
+  }
+  .main-form {
+    margin: 0rem 4rem;
+  }
 }
