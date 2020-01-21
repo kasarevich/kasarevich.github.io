@@ -199,6 +199,9 @@ section {
     margin-top: 14rem;
   }
   .main-form {
-    margin: 0rem 4rem;
+    margin: 0rem 1rem;
+  }
+  .main-content h1 {
+    font-size: 2.5rem;
   }
 }
