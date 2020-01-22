@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: sans-serif;
+  background-color: #cccccc;
+}
+.wrapper {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.slider {
+  padding: 0px 50px;
+  margin: 40px 0;
+}
+.slider .slick-list .img-wrap {
+  margin: 0 auto;
+  max-height: 550px;
+  max-width: 800px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.slider .slick-list .img-wrap img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slider-nav {
+  width: 825px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+.slider-nav .slick-arrow {
+  font-size: 0;
+  border: none;
+  outline: none;
+  z-index: 10;
+  width: 30px;
+  height: 60px;
+  position: absolute;
+  top: 45px;
+}
+.slider-nav .slick-arrow.slick-prev {
+  left: 0;
+  background: url(../img/sl-arrow_l.svg) 0  0 / 100% no-repeat;
+}
+.slider-nav .slick-arrow.slick-next {
+  right: 0;
+  background: url(../img/sl-arrow_r.svg) 0  0 / 100% no-repeat;
+}
+.slider-nav .slick-list .slick-track .slick-slide .img-nav-wrap {
+  margin: 0px 50px;
+  height: 120px;
+  overflow: hidden;
+}
+.slider-nav .slick-list .slick-track .slick-slide .img-nav-wrap img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slider-nav .slick-dots {
+  list-style: none;
+  text-align: center;
+  margin-top: 25px;
+}
+.slider-nav .slick-dots li {
+  display: inline;
+  margin: 10px;
+}
+.slider-nav .slick-dots li button {
+  font-size: 0;
+  border: none;
+  outline: none;
+  z-index: 10;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #595959;
+}
+.slider-nav .slick-dots li.slick-active button {
+  background-color: #a6a6a6;
+  -webkit-box-shadow: 0px 0px 10px 4px #fff;
+          box-shadow: 0px 0px 10px 4px #fff;
+}
