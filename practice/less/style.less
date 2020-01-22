@@ -190,6 +190,63 @@ section{
   	}
 }
 
+/* Секция с преимуществами */
+
+.features{
+	.section-header{
+		text-align: center;
+		.bold();
+		font-size: 3.6rem;
+	}
+	&-slider{
+		margin: 8rem 0;
+		&-block{
+			text-align: center;
+			.features-img{
+				height: 6rem;
+				img{
+					margin: 0 auto;
+					display: block;
+				}
+			}
+			h3{
+				.bold();
+				font-size: 2rem;
+				margin-top: 6rem;
+			}
+			p{
+				display: inline-block;
+				font-size: 1.4rem;
+				margin-top: 2.5rem;
+				width: 80%;
+			}
+		}
+	}
+	.slick-active{
+		outline:none;
+	}
+	.arrow{
+		border:none;
+		position:absolute;
+		top:50%;
+		transition: translateY(50%);
+		width: 2rem;
+		height: 2rem;
+		z-index: 100;
+	}
+	.prev{
+		left:0;
+		background: url("../img/features/arrow-l.svg") center no-repeat;
+		background-size: 70%;
+	}
+	.next{
+		right: 0;
+		background: url("../img/features/arrow-r.svg") center no-repeat;
+		background-size:70%;
+		
+	}
+}
+
 @media (max-width: 991px){
 	.main{
 		background-position: top left;

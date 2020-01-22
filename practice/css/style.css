@@ -154,6 +154,59 @@ section {
   margin: 4rem 3rem 0;
   font-size: 1.2rem;
 }
+/* Секция с преимуществами */
+.features .section-header {
+  text-align: center;
+  font-family: 'ProximaNova-bold', sans-serif;
+  font-size: 3.6rem;
+}
+.features-slider {
+  margin: 8rem 0;
+}
+.features-slider-block {
+  text-align: center;
+}
+.features-slider-block .features-img {
+  height: 6rem;
+}
+.features-slider-block .features-img img {
+  margin: 0 auto;
+  display: block;
+}
+.features-slider-block h3 {
+  font-family: 'ProximaNova-bold', sans-serif;
+  font-size: 2rem;
+  margin-top: 6rem;
+}
+.features-slider-block p {
+  display: inline-block;
+  font-size: 1.4rem;
+  margin-top: 2.5rem;
+  width: 80%;
+}
+.features .slick-active {
+  outline: none;
+}
+.features .arrow {
+  border: none;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: translateY(50%);
+  transition: translateY(50%);
+  width: 2rem;
+  height: 2rem;
+  z-index: 100;
+}
+.features .prev {
+  left: 0;
+  background: url("../img/features/arrow-l.svg") center no-repeat;
+  background-size: 70%;
+}
+.features .next {
+  right: 0;
+  background: url("../img/features/arrow-r.svg") center no-repeat;
+  background-size: 70%;
+}
 @media (max-width: 991px) {
   .main {
     background-position: top left;
