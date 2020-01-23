@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: sans-serif;
+  background-color: #fff;
+}
+.modal {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+.modal .modal-window {
+  max-width: 300px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 5px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.modal .modal-window-header span {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 28px;
+  cursor: pointer;
+}
+.modal .modal-window-header span:hover {
+  opacity: 70%;
+}
+.modal .modal-window-content {
+  text-align: center;
+}
+.modal .modal-window-content img {
+  margin-top: 40px;
+  width: 100px;
+  height: 100px;
+}
+.modal .modal-window-content-title {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.modal .modal-window-content-text {
+  font-size: 16px;
+  color: #969494;
+  margin: 25px;
+}
+.modal .modal-window-content .btn {
+  width: 110px;
+  padding: 10px 0;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 10px 20px 10px;
+}
+.modal .modal-window-content .btn:hover {
+  opacity: 80%;
+}
+.modal .modal-window-content #btn-ok {
+  background-color: #f64c3b;
+}
+.modal .modal-window-content #btn-cancel {
+  background-color: #969494;
+}
+.img-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.img-block #image-to-remove {
+  margin-top: 50px;
+  max-width: 600px;
+  display: block;
+}
+.img-block .remove {
+  width: 110px;
+  padding: 10px 0;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin-top: 30px;
+  background-color: #969494;
+}
+.img-block .remove:hover {
+  opacity: 80%;
+}

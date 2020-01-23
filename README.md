@@ -22,4 +22,5 @@
 * [LESSON 14](kasarevich.github.io/lesson_14) - *Ways of adding fonts to webpage*
 * [LESSON 15](kasarevich.github.io/lesson_15) - *Basic hover-effects*
 * [LESSON 16](kasarevich.github.io/lesson_16) - *Adding of slider to page*
+* [LESSON 17](kasarevich.github.io/lesson_17) - *Creation of modal windows*
 
