@@ -150,11 +150,14 @@
 	 			$('.popup-btn').on('click', function(event) {
 	 				event.preventDefault();
 	 				$('.popup').fadeIn();
+	 				$(document).mouseup(function (e){ 
+	 						var div = $('.popup-dialog');
+	 						if ( (!div.is(e.target)) && (div.has(e.target).length === 0) || ($('.exit').is(e.target)) ) { 
+	 							$('.popup').fadeOut();
+	 						}
+	 					});
 	 			});
-	 			$('.exit').on('click', function(event) {
-	 				event.preventDefault();
-	 				$('.popup').fadeOut();
-	 			});
+
 	 			/*slider*/
 	 		    $('.features-slider').slick({
 	 		      	infinite: false,
