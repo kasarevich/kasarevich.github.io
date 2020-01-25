@@ -208,6 +208,56 @@ section {
   background: url("../img/features/arrow-r.svg") center no-repeat;
   background-size: 70%;
 }
+/* dialog-windows */
+/* contact us dialog */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.popup-dialog {
+  background-color: #ffffff;
+  text-align: center;
+  position: relative;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 35rem;
+}
+.popup-dialog .exit {
+  background-color: transparent;
+  border: none;
+  font-size: 4rem;
+  color: #ffffff;
+  position: absolute;
+  top: -3rem;
+  right: -3.5rem;
+  outline: none;
+}
+.popup-dialog-content {
+  padding-top: 3rem;
+}
+.popup-dialog-content h3 {
+  font-size: 2rem;
+  font-family: 'ProximaNova-bold', sans-serif;
+}
+.popup-dialog-content p {
+  font-size: 2rem;
+}
+.popup-dialog-content .main-form {
+  padding-top: 0;
+}
+.popup-dialog-content textarea {
+  font-size: 1rem;
+}
 @media (max-width: 991px) {
   .main {
     background-position: top left;
